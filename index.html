@@ -101,6 +101,15 @@ logEvent(analytics, 'button_clicked', {
 console.log("Event logged: button_clicked");
   });
 </script>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "2eb70ce5-71da-4c3a-9859-55c3f06d62f0",
+    });
+  });
+</script>
 </head>
 <body>
     <header>
