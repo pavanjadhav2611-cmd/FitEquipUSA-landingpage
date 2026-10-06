@@ -19,7 +19,27 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80">
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBm2CyReFNg_4wr5Jiyovfn2QfwIY9zkUc",
+  authDomain: "payzenanalyticsapp-dad1b.firebaseapp.com",
+  projectId: "payzenanalyticsapp-dad1b",
+  storageBucket: "payzenanalyticsapp-dad1b.firebasestorage.app",
+  messagingSenderId: "303060487065",
+  appId: "1:303060487065:web:a4a7729f4feed730a16108",
+  measurementId: "G-YDP8C06YXK"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17587967409"></script>
 <script>
